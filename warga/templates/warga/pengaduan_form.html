@@ -1,0 +1,23 @@
+<html>
+
+<head>
+    <title>Tambah Pengaduan Baru</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+</head>
+
+<body>
+    <h1>Form Pengaduan Warga</h1>
+
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Kirim Pengaduan</button>
+    </form>
+
+    <a href="{% url 'pengaduan-list' %}">← Kembali ke daftar pengaduan</a>
+</body>
+
+</html>
