@@ -1,0 +1,6 @@
+# Abaikan virtual environment
+myenv/
+
+# Abaikan file database dan cache
+data_kelurahan/__pycache__/
+warga/__pycache__/
